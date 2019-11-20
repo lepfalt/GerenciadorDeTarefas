@@ -13,12 +13,12 @@ namespace GerenciadorDeTarefas.Infraestrutura
 	public class GerenciadorContext : DbContext
 	{
 		public DbSet<Usuario> Usuarios { get; set; }
-		//public DbSet<Tarefa> Tarefas { get; set; }
+		public DbSet<Tarefa> Tarefas { get; set; }
 		
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			modelBuilder.ApplyConfiguration(new MapUsuario());
-			//modelBuilder.ApplyConfiguration(new MapTarefa());
+			modelBuilder.ApplyConfiguration(new MapTarefa());
 
 			base.OnModelCreating(modelBuilder);
 		}

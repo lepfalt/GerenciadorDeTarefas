@@ -4,14 +4,16 @@ using GerenciadorDeTarefas.Infraestrutura;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GerenciadorDeTarefas.Migrations
 {
     [DbContext(typeof(GerenciadorContext))]
-    partial class GerenciadorContextModelSnapshot : ModelSnapshot
+    [Migration("20191120235210_Update_Tarefa_AddCampoConcluida")]
+    partial class Update_Tarefa_AddCampoConcluida
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

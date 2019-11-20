@@ -4,14 +4,16 @@ using GerenciadorDeTarefas.Infraestrutura;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GerenciadorDeTarefas.Migrations
 {
     [DbContext(typeof(GerenciadorContext))]
-    partial class GerenciadorContextModelSnapshot : ModelSnapshot
+    [Migration("20191120234848_Add_Tarefa")]
+    partial class Add_Tarefa
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -24,9 +26,6 @@ namespace GerenciadorDeTarefas.Migrations
                     b.Property<Guid>("Codigo")
                         .ValueGeneratedOnAdd()
                         .HasColumnName("Codigo");
-
-                    b.Property<bool>("Concluida")
-                        .HasColumnName("Concluida");
 
                     b.Property<DateTime>("Data")
                         .HasColumnName("Data");
