@@ -20,6 +20,14 @@ namespace GerenciadorDeTarefas.Controllers
 			return View();
 		}
 
+		[HttpPost]
+		//[ValidateAntiForgeryToken]
+		public IActionResult Index(string Email, string Senha)
+		{
+				
+			return View();
+		}
+
 		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
 		public IActionResult Error()
 		{

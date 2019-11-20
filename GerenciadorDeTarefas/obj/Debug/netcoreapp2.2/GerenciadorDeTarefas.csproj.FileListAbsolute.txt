@@ -21,7 +21,4 @@ C:\Users\lepfa\source\Impacta\GerenciadorDeTarefas\GerenciadorDeTarefas\bin\Debu
 C:\Users\lepfa\source\Impacta\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\netcoreapp2.2\GerenciadorDeTarefas.Views.pdb
 C:\Users\lepfa\source\Impacta\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\netcoreapp2.2\GerenciadorDeTarefas.csproj.CopyComplete
 C:\Users\lepfa\source\Impacta\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\netcoreapp2.2\GerenciadorDeTarefas.csprojAssemblyReference.cache
-C:\Users\lepfa\source\Impacta\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\netcoreapp2.2\Razor\Views\Home\Home.g.cshtml.cs
-C:\Users\lepfa\source\Impacta\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
-C:\Users\lepfa\source\Impacta\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
 C:\Users\lepfa\source\Impacta\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
