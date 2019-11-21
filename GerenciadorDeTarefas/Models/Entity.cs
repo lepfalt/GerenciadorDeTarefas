@@ -4,7 +4,7 @@ namespace GerenciadorDeTarefas.Models
 {
 	public abstract class Entity
 	{
-		public Guid Codigo { get; protected set; }
+		public Guid Codigo { get; set; }
 
 		public override bool Equals(object obj)
 		{

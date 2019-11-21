@@ -46,3 +46,8 @@ C:\Users\lepfa\source\Impacta\Envio\GerenciadorDeTarefas\GerenciadorDeTarefas\ob
 C:\Users\lepfa\source\Impacta\Envio\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\netcoreapp2.2\GerenciadorDeTarefas.dll
 C:\Users\lepfa\source\Impacta\Envio\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\netcoreapp2.2\GerenciadorDeTarefas.pdb
 C:\Users\lepfa\source\Impacta\Envio\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\netcoreapp2.2\GerenciadorDeTarefas.csproj.CopyComplete
+C:\Users\lepfa\source\Impacta\Envio\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\netcoreapp2.2\Razor\Views\Usuario\Create.g.cshtml.cs
+C:\Users\lepfa\source\Impacta\Envio\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\netcoreapp2.2\Razor\Views\Usuario\Delete.g.cshtml.cs
+C:\Users\lepfa\source\Impacta\Envio\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\netcoreapp2.2\Razor\Views\Usuario\Details.g.cshtml.cs
+C:\Users\lepfa\source\Impacta\Envio\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\netcoreapp2.2\Razor\Views\Usuario\Edit.g.cshtml.cs
+C:\Users\lepfa\source\Impacta\Envio\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\netcoreapp2.2\Razor\Views\Usuario\Index.g.cshtml.cs
