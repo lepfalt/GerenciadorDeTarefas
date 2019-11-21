@@ -51,3 +51,8 @@ C:\Users\lepfa\source\Impacta\Envio\GerenciadorDeTarefas\GerenciadorDeTarefas\ob
 C:\Users\lepfa\source\Impacta\Envio\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\netcoreapp2.2\Razor\Views\Usuario\Details.g.cshtml.cs
 C:\Users\lepfa\source\Impacta\Envio\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\netcoreapp2.2\Razor\Views\Usuario\Edit.g.cshtml.cs
 C:\Users\lepfa\source\Impacta\Envio\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\netcoreapp2.2\Razor\Views\Usuario\Index.g.cshtml.cs
+C:\Users\lepfa\source\Impacta\Envio\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\netcoreapp2.2\Razor\Views\Tarefa\Create.g.cshtml.cs
+C:\Users\lepfa\source\Impacta\Envio\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\netcoreapp2.2\Razor\Views\Tarefa\Delete.g.cshtml.cs
+C:\Users\lepfa\source\Impacta\Envio\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\netcoreapp2.2\Razor\Views\Tarefa\Details.g.cshtml.cs
+C:\Users\lepfa\source\Impacta\Envio\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\netcoreapp2.2\Razor\Views\Tarefa\Edit.g.cshtml.cs
+C:\Users\lepfa\source\Impacta\Envio\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\netcoreapp2.2\Razor\Views\Tarefa\Index.g.cshtml.cs

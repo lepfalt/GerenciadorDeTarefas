@@ -1,53 +1,196 @@
-﻿@model IEnumerable<GerenciadorDeTarefas.Models.Usuario>
+﻿@*@page
+	@model GerenciadorDeTarefas.Models.Usuario
+	@{
+		ViewData["Title"] = "Usuario";
+	}*@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<script type="text/javascript" src="@Url.Content("~/js/jquery.slim.js")"></script>
+	<link rel="stylesheet" href="@Url.Content("~/css/Login.css")" />
+	<link rel="stylesheet" href="@Url.Content("~/lib/bootstrap/dist/css/bootstrap.min.css")" />
+	<script type="text/javascript" src="@Url.Content("~/lib/bootstrap/dist/css/bootstrap.bundle.js")"></script>
+	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
-@{
-    ViewData["Title"] = "Index";
-}
+	<!-- Page level plugin CSS-->
+	<link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<h1>Index</h1>
+	<!-- Custom styles for this template-->
+	<link href="css/sb-admin.css" rel="stylesheet">
+</head>
+<body id="page-top">
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Permissao)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Senha)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Permissao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Senha)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Codigo">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Codigo">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Codigo">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+		<div class="container">
+			<a class="navbar-brand" href="#">Gerenciador de Tarefas</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">
+							Tarefas
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a id="CadastrarUsuario" class="nav-link" href="~/Controllers/UsuariosController">Cadastrar Usuário</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<div id="wrapper" style="margin-top: 4em;">
+
+		<div id="content-wrapper">
+
+			<div class="container-fluid">
+
+				<!-- DataTables Example -->
+				<div class="card mb-3">
+					<div class="card-header">
+						<i class="fas fa-table"></i>
+						Tarefas
+					</div>
+					<div class="card-body">
+						<div class="table-responsive">
+							<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+								<thead>
+									<tr>
+										<th>Concluida</th>
+										<th>Data</th>
+										<th>Nome</th>
+										<th>Descrição</th>
+									</tr>
+								</thead>
+								@*<tfoot>
+										<tr>
+											<th>Name</th>
+											<th>Position</th>
+											<th>Office</th>
+											<th>Age</th>
+											<th>Start date</th>
+											<th>Salary</th>
+										</tr>
+									</tfoot>*@
+								<tbody>
+									<tr>
+										<td>Tiger Nixon</td>
+										<td>System Architect</td>
+										<td>Edinburgh</td>
+										<td>61</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					@*<div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>*@
+				</div>
+
+			</div>
+
+
+		</div>
+		<!-- /.content-wrapper -->
+
+	</div>
+
+	<!-- /#wrapper -->
+	<!-- Scroll to Top Button-->
+	<a class="scroll-to-top rounded" href="#page-top">
+		<i class="fas fa-angle-up"></i>
+	</a>
+
+
+	<!-- Page Content -->
+	<div class="container" style="margin-left:28em;">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+
+				<div class="container-fluid">
+					<div class="row no-gutter">
+
+						<div class="col-md-8 col-lg-6">
+							<div class="login d-flex align-items-center py-5">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-9 col-lg-8 mx-auto">
+											<h3 class="login-heading mb-4 text-center">Cadastrar Novo Usuário</h3>
+											<form>
+												<div class="form-label-group">
+													<input type="email" id="inputNome" name="inputNome" class="form-control" placeholder="Email address" required autofocus>
+													<label for="inputNome">Nome Completo</label>
+												</div>
+
+												<div class="form-label-group">
+													<input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+													<label for="inputEmail">Email address</label>
+												</div>
+
+												<div class="form-label-group">
+													<input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Password" required>
+													<label for="inputPassword">Password</label>
+												</div>
+
+												<div class="form-label-group text-center">
+													<div class="form-check form-check-inline">
+														<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+														<label class="form-check-label" for="inlineRadio1">Administrador</label>
+													</div>
+													<div class="form-check form-check-inline">
+														<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+														<label class="form-check-label" for="inlineRadio2">Usuário Básico</label>
+													</div>
+													@*<label for="inputUsuario">Usuário</label>*@
+												</div>
+
+												<button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Cadastrar</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- /.container-fluid -->
+				<!-- Sticky Footer -->
+				<footer class="sticky-footer" style="margin-right:38em;">
+					<div class="container my-auto">
+						<div class="copyright text-center my-auto">
+							<span>Copyright © Your Website 2019</span>
+						</div>
+					</div>
+				</footer>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap core JavaScript-->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Core plugin JavaScript-->
+	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+	<!-- Page level plugin JavaScript-->
+	<script src="vendor/datatables/jquery.dataTables.js"></script>
+	<script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
+	<!-- Custom scripts for all pages-->
+	<script src="js/sb-admin.min.js"></script>
+
+	<!-- Demo scripts for this page-->
+	<script src="js/demo/datatables-demo.js"></script>
+</body>
+</html>

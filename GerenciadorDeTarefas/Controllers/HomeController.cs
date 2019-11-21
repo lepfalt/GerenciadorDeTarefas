@@ -38,13 +38,16 @@ namespace GerenciadorDeTarefas.Controllers
 		}
 
 		[HttpPost]
-		//[ValidateAntiForgeryToken]
 		public IActionResult Index(string Email, string Senha)
 		{
 			var usuario = Db.Usuarios
 						   .Where(u => u.Email == Email && u.Senha == Senha)
 						   .FirstOrDefault();
-			return View();
+
+			if (usuario == null)
+				return View();
+
+			return View("~/Views/Usuario/Index.cshtml");
 		}
 
 		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
