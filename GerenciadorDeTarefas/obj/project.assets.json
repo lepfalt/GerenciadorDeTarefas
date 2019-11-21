@@ -12953,11 +12953,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lepfa\\source\\Impacta\\GerenciadorDeTarefas\\GerenciadorDeTarefas\\GerenciadorDeTarefas.csproj",
+      "projectUniqueName": "C:\\Users\\lepfa\\source\\Impacta\\Envio\\GerenciadorDeTarefas\\GerenciadorDeTarefas\\GerenciadorDeTarefas.csproj",
       "projectName": "GerenciadorDeTarefas",
-      "projectPath": "C:\\Users\\lepfa\\source\\Impacta\\GerenciadorDeTarefas\\GerenciadorDeTarefas\\GerenciadorDeTarefas.csproj",
+      "projectPath": "C:\\Users\\lepfa\\source\\Impacta\\Envio\\GerenciadorDeTarefas\\GerenciadorDeTarefas\\GerenciadorDeTarefas.csproj",
       "packagesPath": "C:\\Users\\lepfa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lepfa\\source\\Impacta\\GerenciadorDeTarefas\\GerenciadorDeTarefas\\obj\\",
+      "outputPath": "C:\\Users\\lepfa\\source\\Impacta\\Envio\\GerenciadorDeTarefas\\GerenciadorDeTarefas\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

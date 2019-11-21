@@ -52,6 +52,18 @@ namespace GerenciadorDeTarefas.Infraestrutura.Mappings
 				.Property(t => t.Concluida)
 				.HasColumnName("Concluida")
 				.IsRequired(true);
+
+			builder
+				.HasOne(t => t.Usuario)
+				.WithMany(u => u.Tarefas)
+				.HasForeignKey(t => t.CodigoUsuario)
+				.HasConstraintName("fkTarefaUsuario")
+				.OnDelete(DeleteBehavior.Restrict)
+				.IsRequired();
+
+			builder
+				.HasIndex(t => t.CodigoUsuario)
+				.HasName("ixTarefaCodigoUsuario");
 		}
 	}
 }

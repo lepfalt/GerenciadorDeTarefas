@@ -12,6 +12,11 @@
     <None Remove="Views\Shared\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Migrations\20191121162113_Update_Tarefa_AddCampoUsuario.cs" />
+    <Compile Remove="Migrations\20191121162113_Update_Tarefa_AddCampoUsuario.Designer.cs" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
